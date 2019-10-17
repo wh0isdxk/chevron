@@ -1,8 +1,7 @@
 name: Gosec
 
 on: push
-    name: Sec
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
     - uses: actions/checkout@master
     - name: check
