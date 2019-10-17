@@ -1,13 +1,12 @@
 name: Gosec
 
 on: push
-
-jobs:
-  checks:
-    name: run
+    name: Sec
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-
-    - name: run
-      uses: cedrickring/securego/gosec
+    - name: check
+      uses: grandcolline/golang-github-actions@v1.0.0
+      with:
+        run: sec
+        flags: "-exclude=G104"
