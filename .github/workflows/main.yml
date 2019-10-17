@@ -1,0 +1,13 @@
+name: Gosec
+
+on: push
+
+jobs:
+  checks:
+    name: run
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: run
+      uses: cedrickring/securego/gosec:v2.1.0
