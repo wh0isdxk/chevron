@@ -7,7 +7,7 @@ jobs:
     name: run
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/chevron@v1
+    - uses: actions/chevron
 
     - name: run
       uses: cedrickring/securego/gosec@v2.1.0
