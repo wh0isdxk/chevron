@@ -8,11 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: build
-      uses: cedrickring/securego/gosec@v2.1.0
-  security:
-    - name: Sec
-    steps:
-    - uses: actions/checkout@master
-    - name: check
-      uses: grandcolline/golang-github-actions@v1.0.0
+
+    - name: run
+      uses: cedrickring/securego/gosec
