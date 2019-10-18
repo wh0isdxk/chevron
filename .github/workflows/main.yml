@@ -13,6 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Check missing error check
-      uses: "cedrickring/securego/gosec@v2.1.0"
+      uses: "securego/gosec@v2.1.0"
       with:
 args: go get github.com/securego/gosec/sh/gosec; gosec ./... # https://github.com/securego/gosec 
