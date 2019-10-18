@@ -1,11 +1,6 @@
 name: Go
-on:
-  pull_request:
-    branches:
-    - feature/*
-  push:
-    branches:
-    - feature/*
+on [push]
+
 jobs:
   security:
     name: Review security
