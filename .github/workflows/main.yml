@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Check missing error check
-      uses: "securego/gosec@v2.1.0"
+      uses: "securego/gosec@v2.1.0" ./...
