@@ -1,0 +1,14 @@
+name: Static Code Analysis  
+on: [push] 
+
+jobs: 
+	security: 
+		name: Run GolangCI
+		runs-on: ubuntu-latest 
+		steps:  
+		- uses: actions/checkout@v1.1.0
+		- name: Action - GolangCI Lint
+  		uses: matoous/golangci-lint-action@v1.0.0
+
+		with:
+			args: ./...
