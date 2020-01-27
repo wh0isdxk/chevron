@@ -3,7 +3,6 @@ on: [push]
 
 jobs: 
 	security: 
-		name: Run GolangCI
 		runs-on: ubuntu-latest 
 		steps:  
 		- uses: actions/checkout@v1.1.0
