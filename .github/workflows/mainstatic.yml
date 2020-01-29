@@ -3,8 +3,8 @@ on: [push]
 
 jobs: 
  runs-on: ubuntu-latest 
-  steps:
+ steps:
  - name: GolangCI-Lint Action
-  uses: actions-contrib/golangci-lint@v0.1.0 
-  with:
+   uses: actions-contrib/golangci-lint@v0.1.0 
+   with:
    args: ./...
