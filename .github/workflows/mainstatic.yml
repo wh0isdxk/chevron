@@ -3,8 +3,10 @@ on: [push]
 
 jobs: 
  runs-on: ubuntu-latest 
- steps:
+  steps:
+ - name: Static Go 
+   uses: actions/checkout@v1.1.0
  - name: GolangCI-Lint Action
-   uses: actions-contrib/golangci-lint@v0.1.0 
-   with:
-   args: ./...
+   uses: actions-contrib/golangci-lint@v0.1.0
+ with:
+  args: ./...
