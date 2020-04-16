@@ -1,15 +1,12 @@
 version = 1
 
-test_patterns = [
-  "./..."
-]
-
 [[analyzers]]
 name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_path = "github.com/quan-to/chevron"
+  import_path = "github.com/wh0isdxk/chevron"
+  dependencies_vendored = true
 
 [[analyzers]]
 name = "test-coverage"
